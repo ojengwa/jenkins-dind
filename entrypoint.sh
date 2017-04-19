@@ -1,9 +1,10 @@
 #!/bin/sh
 
 # Find GID of docker group
-DOCKER_GID=`ls -n /var/run/docker.sock | awk '{ print $4 }'`
+DOCKER_GID=`stat -c %g /var/run/docker.sock`
 
-# Create docker group and add jenkins user to it
+# Recreate docker group and add jenkins user to it
+groupdel docker
 getent group docker || groupadd -g $DOCKER_GID docker && usermod -aG docker jenkins
 
 # Run jenkins as jenkins
