@@ -1,6 +1,4 @@
 FROM jenkinsci/blueocean:latest
-
-VOLUME /var/run/docker.sock /var/run/docker.sock
 USER root
 
 # Install Docker and shadow (for groupadd / usermod etc)
