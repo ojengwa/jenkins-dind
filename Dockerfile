@@ -10,4 +10,4 @@ RUN install-plugins.sh antisamy-markup-formatter matrix-auth pipeline-model-defi
 
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
-ENTRYPOINT ["/bin/tini", "--", "/entrypoint.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
