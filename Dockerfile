@@ -6,7 +6,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" > /etc/apk/reposi
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
     && apk add --update --no-cache docker shadow su-exec
 
-RUN install-plugins.sh antisamy-markup-formatter matrix-auth pipeline-model-definition blueocean:1.3.0
+RUN install-plugins.sh antisamy-markup-formatter matrix-auth pipeline-model-definition blueocean
 
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
