@@ -44,26 +44,20 @@ RUN install-plugins.sh  \
     credentials-binding \
     display-url-api \
     docker \
-    docker-commons \
     docker-workflow \
     durable-task \
     email-ext \
     external-monitor-job \
     favorite \
     git \
-    git-client \
-    git-server \
     global-build-stats \
-    gradle \
     handlebars \
     icon-shim \
     jackson2-api \
     jquery-detached \
     junit \
     keycloak \
-    ldap \
     mailer \
-    mapdb-api \
     matrix-auth \
     matrix-project \
     metrics \
@@ -94,7 +88,6 @@ RUN install-plugins.sh  \
     ssh-credentials \
     ssh-slaves \
     structs \
-    subversion \
     timestamper \
     token-macro \
     variant \
