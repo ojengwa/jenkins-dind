@@ -43,6 +43,7 @@ RUN install-plugins.sh  \
     credentials \
     credentials-binding \
     display-url-api \
+    docker \
     docker-commons \
     docker-workflow \
     durable-task \
