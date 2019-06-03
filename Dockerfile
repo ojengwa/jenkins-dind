@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:alpine
+FROM jenkins/jenkins:alpine
 USER root
 
 # Install Docker and shadow (for groupadd / usermod etc)
